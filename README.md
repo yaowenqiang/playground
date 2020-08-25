@@ -17,6 +17,8 @@ docker run --name=play --rm -p 8080:8080 golang/playground &
 # run some Go code
 cat /path/to/code.go | go run client.go | curl -s --upload-file - localhost:8080/compile
 ```
+> docker run --rm -P gofunky/playground:latest
+
 
 ## Deployment
 
